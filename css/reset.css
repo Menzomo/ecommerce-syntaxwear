@@ -1,0 +1,54 @@
+/* Modern CSS Reset (inspirado em Andy Bell)
+   https://andy-bell.design/articles/a-modern-css-reset/
+*/
+
+/* Box sizing rules */
+:where(html) { box-sizing: border-box; }
+:where(*, *::before, *::after) { box-sizing: inherit; }
+
+/* Remove default margin */
+:where(body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd) { margin: 0; }
+
+/* Allow percentage-based heights in the application */
+:where(html, body) { height: 100%; }
+
+/* Improve defaults for media */
+:where(img, picture, video, canvas, svg) { display: block; max-width: 100%; }
+
+/* Typographic tweaks */
+:where(body) {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make form elements inherit font */
+:where(input, button, textarea, select) { font: inherit; }
+
+/* Remove built-in form decorations in iOS */
+:where(button) { background: none; color: inherit; border: none; padding: 0; }
+
+/* Remove list styles on UL, OL elements */
+:where(ul, ol) { list-style: none; padding: 0; margin: 0; }
+
+/* Anchor defaults */
+:where(a) { text-decoration: none; color: inherit; }
+
+/* Tables */
+:where(table) { border-collapse: collapse; border-spacing: 0; }
+
+/* Preserve useful defaults for elements that are commonly styled */
+:where(button, [role="button"]) { cursor: pointer; }
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  :where(*, *::before, *::after) {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility: allow images to scale nicely */
+:where(img) { height: auto; }
