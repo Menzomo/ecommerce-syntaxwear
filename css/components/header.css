@@ -6,32 +6,33 @@
     left:50%;
     transform: translate(-50%);
     width: calc(100% - 40px);
-    border-radius: 20px;
+    border-radius: 15px;
     z-index:  999;
   display:flex;
     justify-content:space-between;
     align-items: center;
-padding: 12px 20px;
-
+padding: 0.265rem 1.25rem ;
+background-color: #ffffff   ;
 }
 .logo img{
-width: 150px;
+
 height: 48px;
 
 
 }
 .nav-center ul{
-    list-style: none;
     display: flex;
     gap: 2.5rem;
 
 }
 .nav-center a,.quick-nav a
 {
-    text-decoration: none;
+   
     font-size: 1.25rem;
-
+	color: #333333;
 }
+
+
 .nav-center a:hover,.quick-nav a:hover
 {
     color:#7c3aed;
