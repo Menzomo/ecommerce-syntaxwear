@@ -136,14 +136,77 @@
   </main>
 
   <!-- rodapé com contatos e links úteis -->
-  <footer>
-    <div class="footer-info">
-      <div class="contatos">
-        <!-- informações de contato -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__newsletter">
+        <h2>Inscreva-se em nosso e-mail</h2>
+        <form class="footer__form">
+          <input
+            type="email"
+            name="email"
+            placeholder="email@email.com"
+            required
+          />
+        </form>
+
+        <div class="footer__social">
+          <h2>Redes sociais</h2>
+          <div class="footer__social-icons">
+            <a href="#" aria-label="Instagram" class="footer__social-link">
+              <span class="icon icon--instagram"></span>
+            </a>
+            <a href="#" aria-label="WhatsApp" class="footer__social-link">
+              <span class="icon icon--whatsapp"></span>
+            </a>
+            <a href="#" aria-label="TikTok" class="footer__social-link">
+              <span class="icon icon--tiktok"></span>
+            </a>
+            <a href="#" aria-label="Facebook" class="footer__social-link">
+              <span class="icon icon--facebook"></span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="links-uteis">
-        <!-- links úteis -->
+
+      <div class="footer__links">
+        <div class="footer__column">
+          <h3>Masculino</h3>
+          <a href="#">Casual</a>
+          <a href="#">Esporte</a>
+          <a href="#">Moderno</a>
+          <a href="#">Futurista</a>
+        </div>
+
+        <div class="footer__column">
+          <h3>Feminino</h3>
+          <a href="#">Casual</a>
+          <a href="#">Esporte</a>
+          <a href="#">Moderno</a>
+          <a href="#">Futurista</a>
+        </div>
+
+        <div class="footer__column">
+          <h3>Outlet</h3>
+          <a href="#">Masculino</a>
+          <a href="#">Feminino</a>
+        </div>
+
+        <div class="footer__column">
+          <h3>Nossas lojas</h3>
+          <a href="#">Loja física</a>
+          <a href="#">Loja online</a>
+        </div>
+
+        <div class="footer__column">
+          <h3>Sobre</h3>
+          <a href="#">Quem somos</a>
+          <a href="#">Missão</a>
+        </div>
       </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>Copyright. All Rights Reserved</p>
     </div>
   </footer>
 
