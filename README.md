@@ -46,8 +46,11 @@ ecommerce-syntaxwear/
 │   └── main.js           # Lógica principal do site
 └── index.html            # Ponto de entrada do site
 ```
+## 🌐 Acesse o projeto online :
 
-## 🚀 Como Executar o Projeto
+https://menzomo.github.io/ecommerce-syntaxwear/
+
+## 🚀 Como ter acesso ao Projeto
 
 1.  **Clone o repositório:**
     ```bash
