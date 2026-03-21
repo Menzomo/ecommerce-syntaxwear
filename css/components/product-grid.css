@@ -79,3 +79,37 @@
     
     gap: 10px;
 }
+@media(max-width:768px){
+   .grid-section{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, auto);
+ grid-template-areas: 
+    "destaque destaque"
+    "branco branco"
+    "modelo colorido"
+    "modelo gray"
+    "roxo roxo";
+   
+    ;
+    max-width: 100%;
+    gap:0.625rem;
+
+   }
+   .destaque{
+    min-height: 500px;
+   }
+   .branco{
+    min-height: 185px;
+   }
+   .modelo{
+    min-height: 370px;
+   }
+   .colorido,.gray {
+    min-height: 185px;
+   }
+.roxo{
+    min-height: 370px;
+   }
+
+    
+}
