@@ -233,8 +233,9 @@
   }
 
   .footer__form {
-    flex-direction: column;
-    gap: 0.75rem;
+    display:block
+    
+  
   }
 
   .footer__form input,
